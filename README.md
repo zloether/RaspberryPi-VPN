@@ -1,6 +1,7 @@
 # RaspberryPi-VPN
 
 Setup a RaspberryPi to work as a VPN
+[https://pivpn.io/](https://pivpn.io/)
 
 
 ## Requirements
@@ -26,5 +27,17 @@ Setup a RaspberryPi to work as a VPN
     ```
 
 
-## Instructions
+## Initial Setup
+1. Install Raspberry Pi OS Lite
+1. Connect Raspberry Pi to ethernet cable, monitor, keyboard, and mouse
+1. Log into Raspberry Pi using default username `pi` and password `raspberry`
+1. Run these commands to enable and start `ssh`
+    ```
+    sudo sytemctl enable ssh
+    sudo systemctl start ssh
+    ```
+1. Now you can logout and disconnect the monitor, keyboard, and mouse - everything else will be done remotely
+
+
+## VPN Setup
 1. 
