@@ -1,0 +1,7 @@
+# roles/install-updates/tasks/main.yml
+---
+- name: install updates
+  apt:
+    update_cache: yes
+    upgrade: safe
+  
