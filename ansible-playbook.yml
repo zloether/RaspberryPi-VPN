@@ -1,0 +1,16 @@
+#!/usr/bin/env ansible-playbook -i inventory --ask-pass --ask-become-pass ansible-playbook.yml
+
+---
+- hosts: pivpn
+  remote_user: pi
+  become: yes
+  vars:
+    vpn_port: 1234
+  vars_files:
+    - variables.yml
+  roles:
+    - install-updates
+    - static-ip
+  
+
+  
