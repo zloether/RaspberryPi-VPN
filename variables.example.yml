@@ -1,0 +1,5 @@
+---
+ipaddress: 192.168.XX.XX/24
+dns_servers: 192.168.XX.XX
+routers: 192.168.XX.XX
+interface: eth0
